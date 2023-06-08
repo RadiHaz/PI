@@ -1,0 +1,130 @@
+/*
+    Primary: #010907 (RGB: 1, 9, 7)
+    Secondary: #e9fbf7 (RGB: 233, 251, 247)
+    Primary Button: #1347d8 (RGB: 19, 71, 216)
+    Secondary Button: #ffffff (RGB: 255, 255, 255)
+    Accent: #1140c0 (RGB: 17, 64, 192)
+*/
+
+/*global classes*/
+
+:root {
+    --primary: #010907;
+    --secondary: #e9fbf7;
+    --primary-button: #1347d8;
+    --secondary-button: #ffffff;
+    --accent: #1140c0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+.d-flex-row {
+    display: flex;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/* actual page style below*/
+
+nav {
+    margin-top: 25px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    height: 72px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.banner {
+    justify-content: space-evenly;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text-left {
+    display: flex;
+}
+
+.about-text-right {
+    display: flex;
+}
+
+.about-text {
+    justify-content: center;
+    margin: 0 10rem;
+}
+
+.mid-section {
+
+}
+
+#prices {
+    justify-content: center;
+    align-items: center;
+}
+
+.price-card {
+    width: 33%;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-card > p {
+    width: 50%;
+}
+
+.price-card > button {
+    width: 50%;
+}
+
+.bot-section {
+
+}
+
+footer {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media > img {
+    margin: auto 1rem;
+}
