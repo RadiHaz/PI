@@ -136,9 +136,21 @@ nav {
 .banner {
     margin: 2.5% auto 0 auto;
     justify-content: space-evenly;
-    padding: 2.5% 250px;
+    padding: 2.5% 350px;
     background-color: var(--primary-button);
     color: var(--secondary-button)
+}
+
+.banner__heading-text {
+    margin-left: 152px;
+    margin-right: 50px;
+}
+
+.banner__heading-image {
+    margin-right: 150px;
+}
+.banner__heading-image > img {
+    border-radius: 15px;
 }
 
 .main-heading {
