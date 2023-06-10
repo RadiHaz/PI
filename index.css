@@ -16,10 +16,20 @@
     --accent: #1140c0;
 }
 
+::selection {
+    color: var(--accent);
+    background: var(--secondary);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: var(--secondary);
+    font-family: sans-serif;
 }
 
 ul {
@@ -35,6 +45,7 @@ li {
 
 .d-flex-row {
     display: flex;
+    margin: 0;
 }
 
 .d-flex-col {
@@ -46,33 +57,111 @@ li {
     width: 50%;
 }
 
-/* actual page style below*/
+.title-heading {
+    font-size: 36px;
+    color: var(--primary);
+    margin: 3.5rem auto;
+}
+
+.title-subheading {
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.btn {
+    background-color: var(--primary-button);
+    color: var(--secondary);
+    padding: 2.5%;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    transition-duration: .33s;
+    z-index: 99;
+}
+
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+    -webkit-box-shadow: 3px 13px 43px -10px rgba(17,66,191,0.86);
+    -moz-box-shadow: 3px 13px 43px -10px rgba(17,66,191,0.86);
+    box-shadow: 3px 13px 43px -10px rgba(17,66,191,0.86);
+}
+
+.gradient-text {
+    color: #1347d8;
+    background-image: -webkit-radial-gradient(circle, #1140c0 57%, #010907 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#scroll-to-top {
+    position: fixed;
+    font-size: 100px;
+    left: 95%;
+    top: 90%;
+    cursor: pointer;
+}
+
+/* actual page styles below*/
 
 nav {
-    margin-top: 25px;
+    padding-top: 16px;
+    background-color: var(--secondary-button);
 }
 
 .nav-items {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 2.5%;
     height: 72px;
     align-items: center;
+    margin-right: 15%;
 }
 
 .nav-item {
     text-decoration: none;
-    font-size: 1.25em;
+    font-size: 16px;
+}
+
+.nav-item:hover {
+    background-color: var(--primary-button);
+    color: var(--secondary-button);
+    padding: 10px;
 }
 
 .banner {
+    margin: 2.5% auto 0 auto;
     justify-content: space-evenly;
+    padding: 2.5% 250px;
+    background-color: var(--primary-button);
+    color: var(--secondary-button)
+}
+
+.main-heading {
+    font-size: 48px;
 }
 
 .top-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about-main {
+    margin: 1rem auto;
+}
+
+.about-main__title {
+}
+
+.about-main__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .about-text-left {
@@ -83,39 +172,89 @@ nav {
     display: flex;
 }
 
+.about {
+    margin: 24px auto;
+    background-color: var(--secondary-button);
+    border-radius: 15px;
+}
+
 .about-text {
     justify-content: center;
     margin: 0 10rem;
 }
 
 .mid-section {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-button);
+    background: linear-gradient(180deg, rgba(19, 71, 216, 1) 0%, rgba(17, 64, 192, 0.7903536414565826) 65%, rgba(233, 251, 247, 1) 100%);
 }
 
-#prices {
+.mid-section__title {
+    margin: 5rem;
+    font-size: 48px;
+    color: var(--secondary-button)
+}
+
+#pricing {
     justify-content: center;
     align-items: center;
 }
 
 .price-card {
-    width: 33%;
+    width: 33.33%;
     text-align: center;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--secondary-button);
+    margin: 0 6rem;
+    border-radius: 15px;
+    -webkit-box-shadow: 9px 10px 32px -8px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 9px 10px 32px -8px rgba(0, 0, 0, 0.8);
+    box-shadow: 9px 10px 32px -8px rgba(0, 0, 0, 0.8);
 }
 
 .price-card > p {
-    width: 50%;
+    width: 75%;
 }
 
-.price-card > button {
+.check-mark {
+    margin: 0 .25rem;
+    color: var(--accent)
+}
+
+.price-card > span {
     width: 50%;
+    position: relative;
+    top: 25px;
+    -webkit-box-shadow: 9px 10px 32px -8px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 9px 10px 32px -8px rgba(0, 0, 0, 0.8);
+    box-shadow: 9px 10px 32px -8px rgba(0, 0, 0, 0.8);
 }
 
 .bot-section {
 
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+}
+
+.contact-form {
+    align-items: center;
+    gap: 15px;
+    max-width: 50%;
 }
 
 footer {
