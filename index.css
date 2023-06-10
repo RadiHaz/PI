@@ -17,8 +17,8 @@
 }
 
 ::selection {
-    color: var(--accent);
-    background: var(--secondary);
+    color: var(--secondary-button);
+    background: var(--primary);
 }
 
 html {
@@ -28,7 +28,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--secondary);
+    background-color: white;
     font-family: sans-serif;
 }
 
@@ -81,13 +81,12 @@ li {
     z-index: 99;
 }
 
-
 .btn:hover {
     cursor: pointer;
     background-color: var(--accent);
-    -webkit-box-shadow: 3px 13px 43px -10px rgba(17,66,191,0.86);
-    -moz-box-shadow: 3px 13px 43px -10px rgba(17,66,191,0.86);
-    box-shadow: 3px 13px 43px -10px rgba(17,66,191,0.86);
+    -webkit-box-shadow: 3px 13px 43px -10px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 13px 43px -10px rgba(0,0,0,1);
+    box-shadow: 3px 13px 43px -10px rgba(0,0,0,1);
 }
 
 .gradient-text {
@@ -99,6 +98,7 @@ li {
 }
 
 #scroll-to-top {
+    visibility: hidden;
     position: fixed;
     font-size: 100px;
     left: 95%;
@@ -136,19 +136,33 @@ nav {
 .banner {
     margin: 2.5% auto 0 auto;
     justify-content: space-evenly;
-    padding: 2.5% 350px;
+    padding: 10% 0;
     background-color: var(--primary-button);
-    color: var(--secondary-button)
+    background-image: url("assets/images/layered-waves-haikei (6).svg");
+    background-repeat: no-repeat;
+    color: var(--secondary-button);
+    height: 200px;
 }
 
 .banner__heading-text {
-    margin-left: 152px;
-    margin-right: 50px;
+    width: 50%;
+    margin-left: 120px;
+    position: relative;
+    bottom: 50%;
+    left: 10%
+}
+
+.banner__heading-text > p {
+    width: 50%
 }
 
 .banner__heading-image {
     margin-right: 150px;
+    position: relative;
+    bottom: 50%;
+    right: 5%;
 }
+
 .banner__heading-image > img {
     border-radius: 15px;
 }
@@ -161,6 +175,20 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(19,71,216);
+    background: linear-gradient(0deg, rgba(19,71,216,1) 0%, rgba(255,255,255,1) 9%);
+}
+
+.about {
+    margin: 24px auto;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 13px 43px -10px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 13px 43px -10px rgba(0,0,0,1);
+    box-shadow: 3px 13px 43px -10px rgba(0,0,0,1);
+}
+
+.about > img {
+    border-radius: 15px;
 }
 
 .about-main {
@@ -176,6 +204,12 @@ nav {
     gap: 15px;
 }
 
+.about-text {
+    justify-content: center;
+    margin: 0 10rem;
+    background-color: var(--secondary-button);
+}
+
 .about-text-left {
     display: flex;
 }
@@ -184,23 +218,12 @@ nav {
     display: flex;
 }
 
-.about {
-    margin: 24px auto;
-    background-color: var(--secondary-button);
-    border-radius: 15px;
-}
-
-.about-text {
-    justify-content: center;
-    margin: 0 10rem;
-}
-
 .mid-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--primary-button);
-    background: linear-gradient(180deg, rgba(19, 71, 216, 1) 0%, rgba(17, 64, 192, 0.7903536414565826) 65%, rgba(233, 251, 247, 1) 100%);
+    padding: 1rem 0 1.25rem 0;
 }
 
 .mid-section__title {
@@ -215,7 +238,6 @@ nav {
 }
 
 .price-card {
-    width: 33.33%;
     text-align: center;
     list-style-type: none;
     display: flex;
@@ -236,7 +258,6 @@ nav {
 
 .check-mark {
     margin: 0 .25rem;
-    color: var(--accent)
 }
 
 .price-card > span {
@@ -270,7 +291,7 @@ textarea {
 }
 
 footer {
-    background-color: antiquewhite;
+    background-color: var(--accent);
     display: flex;
     flex-direction: column;
     align-items: center;
