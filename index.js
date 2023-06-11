@@ -6,7 +6,7 @@ scrollToTopBtn.style.display = 'hidden';
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         scrollToTopBtn.style.display = "block";
         scrollToTopBtn.style.visibility = "visible";
         scrollToTopBtn.style.transitionDuration = ".33s"
@@ -20,4 +20,11 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+function scrollToElement(elementId) {
+    const el = document.getElementById(elementId);
+    el.scrollIntoView(false);
+    el.style.border = "5px solid red";
+    console.log(`scrolling to ${elementId}`);
 }

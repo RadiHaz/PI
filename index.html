@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="index.css">
 		<title>Projeto Integrador</title>
 	</head>
@@ -17,6 +18,9 @@
 				</div>
 			</nav>
 			<div class="d-flex-row banner">
+				<div>
+					<div></div>
+				</div>
 				<div class="banner__heading-text">
 					<h1 class="main-heading">Together we can do anything.</h1>
 					<p>
@@ -36,26 +40,26 @@
 					<h2 class="about-main__title title-heading">Our solutions are designed for <span
 							class="gradient-text">all kinds</span> of workloads.</h2>
 					<div class="about-main__buttons">
-						<span class="btn">Work management</span>
-						<span class="btn">IT Services Management</span>
-						<span class="btn">Agile and DevOps</span>
+						<span class="btn" onclick="scrollToElement('work-management')">Work management</span>
+						<span class="btn" onclick="scrollToElement('it-services')">IT Services Management</span>
+						<span class="btn" onclick="scrollToElement('agile-devops')">Agile and DevOps</span>
 					</div>
 				</div>
-				<div class="about about-text-left">
+				<div class="about about-text-left" id="work-management">
 					<div class="d-flex-col about-text">
-						<h2 class="title-subheading" id="work-management">Work Management</h2>
+						<h2 class="title-subheading">Work Management</h2>
 						<p>De nada cara lorem ipsum dolor sit amet</p>
 					</div>
 					<img class="about__image" src="https://picsum.photos/300/300" alt="">
 				</div>
-				<div class="about about-text-right">
+				<div class="about about-text-right" id="it-services">
 					<img class="about__image" src="https://picsum.photos/300/300" alt="">
 					<div class="d-flex-col about-text">
 						<h2 class="title-subheading">IT Services Management</h2>
 						<p>De nada cara lorem ipsum dolor sit amet</p>
 					</div>
 				</div>
-				<div class="about about-text-left">
+				<div class="about about-text-left" id="agile-devops">
 					<div class="d-flex-col about-text">
 						<h2 class="title-subheading">Agile and DevOps</h2>
 						<p>De nada cara lorem ipsum dolor sit amet</p>
@@ -65,7 +69,7 @@
 			</section>
 			<section class="mid-section">
 				<h2 class="mid-section__title title-heading" id="pricing">Check out our pricing.</h2>
-				<div class="d-flex-row">
+				<div class="d-flex-row prices-container">
 					<div class="price-card tier-1">
 						<h2>Basic Tier</h2>
 						<h2>$55.99</h2>
@@ -85,6 +89,7 @@
 						<span class="btn">BUY NOW</span>
 					</div>
 					<div class="price-card tier-2">
+						<div class="most-popular">Most popular!</div>
 						<h2>Medium Tier</h2>
 						<h2>$69.99</h2>
 						<ul>
@@ -103,7 +108,7 @@
 						<span class="btn">BUY NOW</span>
 					</div>
 					<div class="price-card tier-3">
-						<h2>Elite Tier</h2>
+						<h2><span class="gradient-text">Elite Tier</span></h2>
 						<h2>$99.98</h2>
 						<ul>
 							<li><img class="check-mark" alt="" width="15" height="11"
@@ -123,8 +128,15 @@
 				</div>
 			</section>
 			<section class="bot-section">
+				<h4 class="title-heading bot-section__title">Our tools are used by some of the <span class="gradient-text">greatest companies in the world.</span></h4>
+				<div class="clients">
+					<img class="clients__client" src="assets/images/atlassian.png" alt="">
+					<img class="clients__client" src="assets/images/netflix.png" alt="">
+					<img class="clients__client" src="assets/images/shopify.png" alt="">
+					<img class="clients__client" src="assets/images/github.png" alt="">
+				</div>
 				<div class="contact-form-container" id="contact">
-					<h2 class="title-heading">Any questions? Contact us and we'll get back to you ASAP.</h2>
+					<h2 class="title-heading">Any questions? Contact us and we'll get back to you <span class="gradient-text">ASAP.</span></h2>
 					<form class="contact-form d-flex-col">
 						<label for="user-email" class="title-subheading">Your best email</label>
 						<input id="user-email" type="text">
