@@ -11,21 +11,23 @@
 		<header>
 			<nav>
 				<div class="nav-items">
-					<img alt="" src="https://picsum.photos/250/72">
-					<a class="nav-item" href="#about">About</a>
-					<a class="nav-item" href="#pricing">Pricing</a>
-					<a class="nav-item" href="#contact">Contact</a>
+					<img class="nav-items__logo" alt="" src="assets/images/logoipsum-296.svg    ">
+					<div class="nav-items__items">
+						<a class="nav-item" href="#about">About</a>
+						<a class="nav-item" href="#pricing">Pricing</a>
+						<a class="nav-item" href="#contact">Contact</a>
+					</div>
 				</div>
 			</nav>
 			<div class="d-flex-row banner">
-				<div>
-					<div></div>
+				<div class="absolute-bg">
+					<img src="assets/images/polygon-scatter-haikei%20(1).svg" alt="">
 				</div>
 				<div class="banner__heading-text">
 					<h1 class="main-heading">Together we can do anything.</h1>
 					<p>
-						Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet
-						The seeker gains stigma which is not unbiased.
+						We provide solutions for your day-to-day work environment.
+						Used by many, trusted by all.
 					</p>
 				</div>
 				<div class="banner__heading-image">
@@ -68,11 +70,11 @@
 				</div>
 			</section>
 			<section class="mid-section">
-				<h2 class="mid-section__title title-heading" id="pricing">Check out our pricing.</h2>
+				<h2 class="mid-section__title title-heading" id="pricing">Check out our pricing</h2>
 				<div class="d-flex-row prices-container">
 					<div class="price-card tier-1">
-						<h2>Basic Tier</h2>
-						<h2>$55.99</h2>
+						<h2>Solopreneur Tier</h2>
+						<h2>$29.99/mo</h2>
 						<ul>
 							<li><img class="check-mark" alt="" width="15" height="11"
 							         src="assets/images/check-mark.svg">Benefit 1
@@ -84,14 +86,14 @@
 							         src="assets/images/check-mark.svg">Benefit 3
 							</li>
 						</ul>
-						<p>With this tier you'll grant a premium spot on day one + secret bonus on your email after
-							successful subscription.</p>
+						<p>Everything you need to begin your work management. Start here if you're unsure which tier to
+							go for. No bonus included.</p>
 						<span class="btn">BUY NOW</span>
 					</div>
 					<div class="price-card tier-2">
 						<div class="most-popular">Most popular!</div>
-						<h2>Medium Tier</h2>
-						<h2>$69.99</h2>
+						<h2>Startup Tier</h2>
+						<h2>$69.99/mo</h2>
 						<ul>
 							<li><img class="check-mark" alt="" width="15" height="11"
 							         src="assets/images/check-mark.svg">Benefit 1
@@ -103,13 +105,13 @@
 							         src="assets/images/check-mark.svg">Benefit 3
 							</li>
 						</ul>
-						<p>With this tier you'll grant a premium spot on day one + secret bonus on your email after
-							successful subscription.</p>
+						<p>Most popular Tier. Includes everything from Basic Tier, additional features plus secret
+							bonuses sent to your email after successful subscription.</p>
 						<span class="btn">BUY NOW</span>
 					</div>
 					<div class="price-card tier-3">
-						<h2><span class="gradient-text">Elite Tier</span></h2>
-						<h2>$99.98</h2>
+						<h2><span class="gradient-text">Enterprise Tier</span></h2>
+						<h2>$129.95/mo</h2>
 						<ul>
 							<li><img class="check-mark" alt="" width="15" height="11"
 							         src="assets/images/check-mark.svg">Benefit 1
@@ -121,14 +123,15 @@
 							         src="assets/images/check-mark.svg">Benefit 3
 							</li>
 						</ul>
-						<p>With this tier you'll grant a premium spot on day one + secret bonus on your email after
-							successful subscription.</p>
+						<p>Enterprise level Tier. Includes everything from Basic and Medium Tiers, 24/7 phone support
+							plus <span style="font-weight: bold">first month free.</span></p>
 						<span class="btn">BUY NOW</span>
 					</div>
 				</div>
 			</section>
 			<section class="bot-section">
-				<h4 class="title-heading bot-section__title">Our tools are used by some of the <span class="gradient-text">greatest companies in the world.</span></h4>
+				<h4 class="title-heading bot-section__title">Our tools are used by some of the <span
+						class="gradient-text">greatest companies in the world.</span></h4>
 				<div class="clients">
 					<img class="clients__client" src="assets/images/atlassian.png" alt="">
 					<img class="clients__client" src="assets/images/netflix.png" alt="">
@@ -136,15 +139,14 @@
 					<img class="clients__client" src="assets/images/github.png" alt="">
 				</div>
 				<div class="contact-form-container" id="contact">
-					<h2 class="title-heading">Any questions? Contact us and we'll get back to you <span class="gradient-text">ASAP.</span></h2>
-					<form class="contact-form d-flex-col">
-						<label for="user-email" class="title-subheading">Your best email</label>
-						<input id="user-email" type="text">
-
+					<h2 class="title-heading">Any questions? Contact us and we'll get back to you <span
+							class="gradient-text">ASAP.</span></h2>
+					<form class="contact-form">
 						<label for="user-msg" class="title-subheading">Talk to us!</label>
 						<textarea cols="75" rows="10" id="user-msg" placeholder="type your message here"></textarea>
-
-						<span class="btn">Send email</span>
+						<div class="contact-form__btn">
+							<a class="btn" onclick="sendEmail()">Send email</a>
+						</div>
 					</form>
 				</div>
 			</section>

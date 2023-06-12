@@ -25,6 +25,11 @@ function topFunction() {
 function scrollToElement(elementId) {
     const el = document.getElementById(elementId);
     el.scrollIntoView(false);
-    el.style.border = "5px solid red";
     console.log(`scrolling to ${elementId}`);
+}
+
+function sendEmail() {
+    console.log('ola amigo')
+    const userMessage = document.getElementById('user-msg').value;
+    window.location.href = `mailto:company@email.com?subject=I have a question for you!&body=${userMessage}`
 }
