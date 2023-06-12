@@ -440,7 +440,7 @@ footer {
     margin: auto 1rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     html {
         overflow-x: hidden;
     }
@@ -449,10 +449,6 @@ footer {
         font-size: 4rem;
         cursor: pointer;
         z-index: 1000;
-    }
-
-    .nav-items__items {
-
     }
 
     .nav-item {
@@ -568,9 +564,75 @@ footer {
         width: 25vw;
         height: 15vh;
     }
+
+    .footer__center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-data {
+        margin-bottom: 5rem;
+    }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1524px) {
+
+    .nav-item {
+        font-size: 2em;
+    }
+
+    .nav-items > img {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .nav-items__items {
+        margin-left: 10%;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .absolute-bg {
+        opacity: .5;
+    }
+
+    .main-heading {
+        width: 100vw;
+    }
+
+    .banner__heading-text {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 2.5rem 0;
+        left: 0;
+        top: 15%;
+    }
+
+    .banner__heading-text > p {
+        text-align: center;
+        padding: 0 15%;
+        width: auto;
+        line-height: 1.5em;
+        font-size: 1.5rem;
+
+    }
+
+    .banner__heading-image {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .about {
+        flex-direction: column;
+        min-width: 75%;
+    }
+
     .prices-container {
         flex-direction: column;
         align-items: center;
@@ -587,5 +649,8 @@ footer {
         font-size: 1.25em;
     }
 
-
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
