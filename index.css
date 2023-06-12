@@ -97,8 +97,8 @@ li {
 }
 
 .gradient-text {
-    color: #1347d8;
-    background-image: -webkit-radial-gradient(circle, #1140c0 57%, #010907 100%);
+    color: #1140c0;
+    background-image: -webkit-linear-gradient(45deg, #1140c0 30%, #010907 99%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -195,9 +195,9 @@ nav {
 
 .banner__heading-image > img {
     border-radius: 15px;
-    -webkit-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.62);
-    -moz-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.62);
-    box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.62);
+    box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.62);
 }
 
 .main-heading {
@@ -209,8 +209,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(19,71,216);
-    background: linear-gradient(0deg, rgba(19,71,216,1) 0%, rgba(255,255,255,0) 29%);
+    background: rgb(19, 71, 216);
+    background: linear-gradient(0deg, rgba(19, 71, 216, 1) 0%, rgba(255, 255, 255, 0) 29%);
 }
 
 .about {
@@ -221,6 +221,7 @@ nav {
     -moz-box-shadow: 3px 13px 43px -10px rgba(0, 0, 0, 1);
     box-shadow: 3px 13px 43px -10px rgba(0, 0, 0, 1);
     transition-duration: .33s;
+    width: 45%;
 }
 
 .about > img {
@@ -242,9 +243,10 @@ nav {
 
 .about-text {
     justify-content: center;
-    margin: 0 10rem;
     background-color: var(--secondary-button);
+    width: 100%;
 }
+
 
 .about-text-left {
     display: flex;
@@ -301,7 +303,7 @@ nav {
     -ms-transform: rotate(326deg);
     transform: rotate(326deg);
     color: var(--secondary-button);
-    right: 54.5%;
+    right: 53.5%;
     margin-bottom: 387px;
     border-radius: 5px;
     padding: 0 50px;
@@ -482,8 +484,8 @@ footer {
     }
 
     .mid-section {
-        background: rgb(19,71,216);
-        background: linear-gradient(180deg, rgba(19,71,216,1) 40%, rgba(255,255,255,1) 95%);
+        background: rgb(19, 71, 216);
+        background: linear-gradient(180deg, rgba(19, 71, 216, 1) 40%, rgba(255, 255, 255, 1) 95%);
     }
 
     .mid-section__title {
